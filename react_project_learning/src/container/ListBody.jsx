@@ -25,9 +25,14 @@ const ListBody = () => {
            </form>
             {
             todoItem.map((item, index) =>(
-                <div key={index}>{item}</div>
+                <div key={index}>
+                    <h3>{item}</h3>
+                </div>
             ))
           }
+          <div>
+            <button>Clear</button>
+        </div>
         </div>
     );
 }
